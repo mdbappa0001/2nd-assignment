@@ -1,0 +1,325 @@
+/* --------------
+font-family -----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Poppins:wght@400;500&family=Roboto&family=Rubik:wght@400;500&family=Source+Sans+Pro:wght@600&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 50px;
+    color: rgb(2, 2, 82);
+}
+h3{
+    font-size: 25px;
+    margin-left: 80px;
+}
+h2{
+    color: black;
+    margin-left: 12px;
+}
+h4{
+    color: rgb(3, 3, 54);
+    margin-left: 5px;
+}
+
+<!-- -----------------
+new style start--------------- -->
+
+.new-journey{
+    width: 50%;
+    margin-left: 80px;
+}
+.start{
+    display: flex;
+    margin-left: 80px;
+}
+button{
+    background-color: #E02C6D;
+    color: white;
+    font-size: 1.2em;
+    margin: 10px 0 20px 0;
+    padding: 9px;
+    border-radius: 25px;
+}
+.start img{
+    width: 390px;
+    height: 350px;
+    margin-left: 190px;
+    margin-right: 120px;
+}
+
+
+/* ---------------
+grid layout start---------------------- */
+
+.buy{
+    text-align: center;
+    color: rgb(2, 2, 82);
+    margin-bottom: 150px;
+    margin-top: 100px;
+}
+.container{
+    background-color: rgb(255, 255, 255) ; 
+    width: 100%;
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-row-gap: 40px;
+}
+.photo{
+    background-color: rgb(245, 235, 235);
+    border-radius: 15px;
+    box-shadow: 10px 15px 7px rgb(56, 46, 46);
+    cursor: pointer;
+}
+.photo img{
+    width: 306.3px;
+    height: 256px;
+    padding: 10px;  
+}
+.photo:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 1s;
+}
+.doller{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.7em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+}
+.stars{
+    font-size: 13px;
+    color: #FB8200;
+    margin-left: 12px;
+}
+.id{
+    color: black;
+    margin-left: 15px;
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* --------------
+see-more section style --------------- */
+
+.see-more{
+    font-size: 20px;
+    color: #E02C6D;
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+.see-more1{
+    margin-right: 7px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+/*--------------------------
+ laptop section start -------------------------*/
+
+.laptop-photo{
+    display: flex;
+    width: 70%;
+}
+.laptop{
+    width: 50%;
+    margin-left: 80px;
+}
+.laptop img{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px #E02C6D;
+}
+.laptop-details{
+    margin-left: 55px;
+}
+.lap-button{
+    background-color: #E02C6D;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 240px;
+}
+
+
+/* -------------
+footer start----------- */
+
+footer{
+    background-color: rgb(8, 8, 73);
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 7px;
+    padding: 20px;
+}
+.footer{
+    color: white;
+}
+.awesome{
+    padding: 10px;
+    font-size: 1.5em;
+    color: rgb(211, 147, 30);
+}
+
+/* ---------------
+footer end ---------------*/
+
+
+/* ---------------@media query for mobile screen---------------- */
+
+@media (max-width:688px) {
+    h3{
+        text-align: center;
+        margin-left: 0;
+    }
+    .start{
+        display: block;
+        text-align: center;
+        margin-left: 0;
+    }
+    .start img{
+        margin-left: 0;
+    }
+    .photos{
+        display: block;
+       margin-left: 0;
+       padding-left: 15px;  
+    }
+    .photo{
+        box-shadow: none;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    .photo img{
+        padding-bottom: 20px;  
+        
+    }
+    .photo:hover {
+        transform: none;
+        transition: none;
+    }
+    .see-more1{
+        margin-right: 0;
+        align-items: center;
+    }
+    .laptop-photo{
+        display: block;
+    }
+    .laptop{
+        margin-left: 0;
+    }
+    .laptop img{
+        align-items: center;
+        width: 358px;
+        height: 300px;
+        box-shadow: none;
+    }
+  
+    .laptop-details{
+        display: none;
+    }
+    .lap-button{
+        justify-content: center;
+        margin-left: 120px;
+    }
+    
+}
+
+
+/*---------------------------- @media query for tablet screen ---------------------------------------*/
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+    h3{
+        text-align: center;
+        margin-right: 120px;
+    }
+    .new-journey{
+        margin-left: 20px;
+    }
+    .start{
+        display: flex;
+        margin-left: 0;
+    }
+    button{
+        background-color: #E02C6D;
+        color: white;
+        font-size: 1.2em;
+        margin: 10px 0 20px 20px;
+        padding: 9px;
+        border-radius: 25px;
+    }
+    .start img{
+        width: 300px;
+        height: 260px;
+        margin-left: 120px;
+        margin-right: 100px;
+        margin-top: 80px;
+    }
+    .buy{
+        text-align: center;
+        color: rgb(2, 2, 82);
+        margin-bottom: 150px;
+        margin-top: 100px;
+        margin-right: 70px;
+    } 
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        grid-row-gap: 40px;
+        margin-right: 90px;
+    }
+    .photo{
+        background-color: rgb(245, 235, 235);
+        border-radius: 15px;
+        box-shadow: 10px 15px 7px rgb(56, 46, 46);
+        cursor: pointer;
+    }
+    .photo img{
+        width: 306.3px;
+        height: 256px;
+        padding: 10px;  
+        margin-right: 15px;
+    }
+    .photo:hover {
+        transform: none;
+        transition: none;
+    }
+    .laptop-photo{
+        display: flex;
+    }
+    .laptop{
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    .laptop img{
+        width: 280px;
+        height: 220px;
+        border-radius: 20px;
+        box-shadow: 10px 10px 5px #E02C6D;
+    }
+    .laptop-details{
+        margin-left: 50px;
+    }
+    .lap-button{
+        background-color: #E02C6D;
+        border-radius: 10px;
+        font-size: 1.2em;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    
+}
